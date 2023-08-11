@@ -1,0 +1,146 @@
+## 1.What are the two values of the Boolean data type? How do you write them? 
+     Boolean data types are True and False. Writen as True and False.
+
+## 2. What are the three different types of Boolean operators?
+     The different types of Boolean operators are 
+     # i) AND operator 
+     It returns True if both the inputs are True, else it will return false.(if one operand is False is will return False)
+     & is the AND operator 
+     # ii) OR operator 
+          if both the operand are False it will return False otherwise True.
+          '|'  'or' is the operator
+
+    # iii) NOT operator
+         It return the opposite of  the boolean values. True is the input returns False.
+         '!' is the operator
+
+## 3. Make a list of each Boolean operator&#39;s truth tables.
+   # AND operator truth tables
+   True and True ==> True
+   True and False ==> False
+   False and True ==> False
+   False and False ==> False
+
+   # OR operator 
+   True or True ==> True 
+   True or False==> False
+   False or False ==> False
+   False or True --> False
+
+   # NOT operator
+    not True ==> False
+
+## 4. What are the values of the following expressions?
+      (5 > 4) and (3 == 5) ==> True and False==> False
+      not (5 > 4) ==> not True ==> False
+      (5 > 4) or (3 == 5) ==> True or False ==> False
+      not ((5 > 4) or (3 == 5)) ==> not (True or False) ==> not False ==> True
+      (True and True) and (True == False) ==> True and False ==> False
+      (not False) or (not True) ==> True or False ==> False
+
+## 5. What are the six comparison operators?
+     The six comparison operators are: 
+     i) Equal to ( == )
+       Checks LHS and RHS are Equal
+       Ex : if 5 == 5: (if True)
+               print("Hello")   o/p ==> True, "Hello"
+
+    ii) not Equal to ( != )
+        Checks either LHS or RHS is not Equal
+        Ex: if 5 == 55: (if True)
+               print("Hello")   o/p ==> True, "Hello"
+
+   iii) Greater than ( > )
+       checks if LHS is Greater than RHS
+       Ex: if 15 > 5: (if True)
+               print("Hello")   o/p ==> True, "Hello" 
+    
+    iv) Less than ( < )
+    checks if LHS is Less than RHS
+       Ex: if 2 < 5: (if True)
+               print("Hello")   o/p ==> True, "Hello"
+
+    v) Greater than or Equal to ( >= )
+     checks if LHS is Greater than  or Equal to RHS
+       Ex: if 6 >= 5: (if True)
+               print("Hello")   o/p ==> True, "Hello"
+               
+    vi) Less than or Equal to (< ==)
+        checks if LHS is Less than or Equal to RHS
+       Ex: if 5 <= 5: (if True)
+               print("Hello")   o/p ==> True, "Hello"
+
+
+## 6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+     Equal to ( == ) 
+     if 5 == 5: (if True)
+               print("Hello")
+
+    assignment operator ( = )
+     number = int(input("Enter the num  "))   # assignment operator
+     if number == 5: (if True)  <== Equal to 
+            print("Hello")
+
+## 7.Identify the three blocks in this code:
+  # Block 1 (assignment) 
+   spam = 0  # assigned variable spam as 0  
+# Block 2: Checking the condition 
+if spam == 10: # Checking if Spam is Equal to given value, if True the it prints "eggs"
+    print("eggs")
+if spam > 5:   # Checking if Spam is Greater than given value, if True the it prints "Bacon"
+    print("bacon")
+# Block 3: if None of above condition satisfy this block iterates 
+else:             # if Either conditions above are False, the else part is iterate and OP as "ham" \ "spam" \ "spam"
+    print("ham")
+    print("spam")
+    print("Spam")
+
+## 8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam,Greetings! if anything else is stored in spam.
+     Spam = int(input("Enter the num  "))   # assignment operator
+    if Spam == 1:
+       print("HELLO")
+    elif Spam == 2:
+        print("Howdy !")
+    else: 
+        print(" Greeeting ! ")
+
+## 9.If your programme is stuck in an endless loop, what keys you’ll press?
+     Keys 
+     Interupt (Double times I ) : Interupts the execution and stops
+     Restart (Double times 0 0): Clears the output in jupiter notebook
+
+     Stop: many python IDE have the stop button when a loop is endless.
+
+## 10. How can you tell the difference between break and continue? 
+      # break : 
+      This is a statement used to immediately terminate the condition and execute code after the break.
+      irrespective of the condition is still True.
+      This is useful when the block of code may run endless.
+     Ex: for i in range(10):
+             if i == 5:
+                break 
+            print(i) 
+    O/P ==> 0,1,2,3,4 
+
+     # continue :
+     This is a statement used to eliminate the current condition and move on the condition until it is True.
+     This is useful when the block of code is expexted to have an error and developer needs to continue. 
+     Ex for i in range(10):
+             if i == 5:
+                continue
+            print(i) 
+       O/P ==> 0,1,2,3,4,6,7,8,9  (# eliminated the value in if condition and continue the iteration)
+
+## 11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+      range(10) ==> This the numbers in the range of 10, only end point is given, mandatory it takes start as 0.
+      range(0,10) ==>  This the numbers in the range of 10 starting from 0. range(start,end)
+      range(0,10,1) ==> This the numbers in the range of 10 starting from 0 in a step size of 1. range(start,end,step)
+
+      The output of the all 3 range are same.
+
+## 13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+       The function can be called by 
+       spam.bacon()
+
+      
+

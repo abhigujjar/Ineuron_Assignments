@@ -1,0 +1,101 @@
+## 1. In the below elements which of them are values or an expression? eg:- values can be integer or string and expressions will be mathematical operators.
+* = expression (multiplication)
+"hello" = value
+-87.9 = Value (integer)
+- = Expression (Substraction)
+/ = Expression (Division)
++ = Expression (Addition)
+6 = Value (integer)
+
+
+## 2. What is the difference between string and variable? 
+# String 
+A string is a data type used to represent characters, such as letters, digits, and symbols.
+Strings are denoted as ("") or ('') 
+Example=> "hello world" , "@gmail" ,"123456"
+
+# Variable
+Variables is name holder of different data types. 
+It is used to store the data or value with a reference
+Example=> Greeeting = "HELLO WORLD"
+          number = a*b (a and b should be defined)
+
+
+## 3. Describe three different data types.
+  # i) Interger
+        Represents whole numbers and is denoted by int 
+        Example => 1,56,86,4
+
+  # ii) Float 
+       Represents numbers with deimal 
+       Example=> 5.0 .100.2, 45.25,85.2412
+
+ # iii) String 
+       A string is a data type used to represent characters, such as letters, digits, and symbols.
+       Strings are denoted as ""  or '' 
+       Example=> "hello world" , "@gmail" ,"123456"
+
+ # iv) List 
+      Represents an ordered collection of items.
+      Elements can be of any data type, including other lists and are Mutable
+      denoted as [ ]
+      Example: [1, "Hello", True]
+
+ # v) Tuples
+      Represents an ordered collection of items.
+      Elements can be of any data type, but these are not Mutable(Cannot add or remove items after creating)
+      denoted as ( ) 
+      Example=> ("Hello",1254)
+# vi) Dictionary 
+      Represents key-value pairs, where keys are unique identifiers for values.
+      Easy to fast lookups and data organization.
+      denoted as { }
+      Example: {"name": "Abhishek", "age": 30}
+# vii) Sets 
+      Represents an unordered collection of unique elements, i:e there will be no duplicate values 
+      Example: {1, 2, 3}
+    
+## 4. What is an expression made up of? What do all expressions do? 
+     An expression is a combination of values, variables, operators, and function calls that can be evaluated to produce a result. 
+     They are the building blocks of logic. They can represent calculations, comparisons, operations, logic flow , funtion calls
+     logical operations, comparisons etc 
+
+     Expression combines all the block of logic and iterate is step by step.
+    
+## 5. This assignment statements, like spam = 10. What is the difference between an expression and a statement?
+# Expression 
+  An expression is a combination of values, variables, operators, and function calls that can be evaluated to produce a result. 
+  returns a value when evaluated 
+  5*5=25, print("hello world") ==> "Hello world"
+# statement
+  It is a complete line of code which performs as in the line of code.
+  Unlike expressions, statements do not necessarily return a value when executed.
+  spam=10,here spam is variable assigned with a value of 10 (= is an expression)
+  
+
+  ## 6. After running the following code, what does the variable bacon contain?
+       bacon = 22   assginment of variable to data type
+       bacon + 1    bacon value is added 1 
+       The variable bacon is assigned value of 22, after addition of 1 the output is 23, but the value of bacon doesnt change.
+       because the variable doesnt update.
+       for update 
+       bacon = 22
+       bacon += 1 this updates the value of bacon
+
+## 7. What should the values of the following two terms be?
+    'spam'  + 'spamspam' = 'spamspamspam'  addition of one string to another
+    'spam' * 3 = 'spamspamspam'  this multpilies the string to 3  
+   Both the output are same but operations are differnt.
+
+## 8. Why is eggs a valid variable name while 100 is invalid? 
+     This is a valid statement as in python variables cannot start with a number, it understands 100 value is assignment not as variable
+
+## 9. What three functions can be used to get the integer, floating-point number, or string version of a value? 
+     Interger = int(10) output==> 10
+     Float= float(50)    output==> 10.0
+     string= str(10)   output==> '10'
+
+## 10. Why does this expression cause an error? How can you fix it?
+     'I have eaten'+ 99 + 'bacon', this causes an error because string and integers cannot be concatinated.
+     to fix this problem either make 99 as string or give the complete statement as string.
+     I have eaten'+ '99' + 'bacon' or ' I have eaten 99  bacon'
